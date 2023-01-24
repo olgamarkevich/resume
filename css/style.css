@@ -475,6 +475,7 @@ body {
   line-height: 1.6em;
   counter-reset: li;
   list-style: none;
+  font-weight: 300;
 }
 
 .facts-list li:before {
