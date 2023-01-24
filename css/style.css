@@ -169,7 +169,7 @@ body {
   background: #f7f9fc;
   padding: 8px 12px;
   transition: all 0.3s;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   min-height: 72px;
 }
 
@@ -278,7 +278,7 @@ body {
 }
 
 .slider-btns {
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -468,6 +468,20 @@ body {
 
 .link-item:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.facts-list {
+  color: #2e2e48;
+  line-height: 1.6em;
+  counter-reset: li;
+  list-style: none;
+}
+
+.facts-list li:before {
+  content: counter(li) '. ';
+  counter-increment: li;
+  color: var(--color-hover);
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
